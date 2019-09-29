@@ -330,7 +330,6 @@ hr {
 
 .intro .slogan {
 	text-align: center;
-
 }
 
 .intro .page-scroll {
@@ -387,6 +386,10 @@ hr {
     font-size: 16px;
 }
 
+.inner-title {
+    height: 100px;
+}
+
 .boxed-grey {
 	background: #f9f9f9;
 	padding: 20px;
@@ -402,6 +405,12 @@ hr {
 
 .avatar {
 	margin-bottom: 20px;
+}
+
+.avatar img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .team-social {
