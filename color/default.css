@@ -6,7 +6,7 @@ a,.tp-caption a.btn:hover {
 	background: #000;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 768px) {
   .navbar, .navbar-nav {
 		background: #000 !important;
 	}
@@ -20,7 +20,7 @@ a,.tp-caption a.btn:hover {
 	}
 
 	.intro {
-		height: 150%;
+		height: 170%;
 	}
 }
 
