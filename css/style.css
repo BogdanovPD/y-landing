@@ -387,7 +387,7 @@ hr {
 }
 
 .inner-title {
-    height: 100px;
+    height: 10vh;
 }
 
 .boxed-grey {
@@ -848,7 +848,6 @@ Parallax
         padding: 0;
     }
 
-
 }
 
 @media (max-width:480px) {
@@ -874,5 +873,11 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
+
+    .intro {
+        height: 980px;
+        padding: 0;
+    }
+
 
 }
