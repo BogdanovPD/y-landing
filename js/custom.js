@@ -5,17 +5,36 @@
   jQuery(window).load(function() {
     jQuery("#preloader").delay(100).fadeOut("slow");
     jQuery("#load").delay(100).fadeOut("slow");
+    if ('showIntro' in sessionStorage) {
+      $('#intro').show();
+      $('.navbar').hide();
+      $('#home-section').hide();
+      $('#footer').hide();
+    } else {
+      $('#intro').hide();
+      $('.navbar').show();
+      $('.home-section').show();
+      $('#footer').show();
+    }
+  });
+
+  $('#close-intro').click(function() {
+    $('#intro').fadeOut(1000);
+    sessionStorage.setItem('showIntro', "true");
+    $('.navbar').show();
+    $('.home-section').show();
+    $('#footer').show();
   });
 
 
   //jQuery to collapse the navbar on scroll
-  $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-      $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-      $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-  });
+  // $(window).scroll(function() {
+  //   if ($(".navbar").offset().top > 50) {
+  //     $(".navbar-fixed-top").addClass("top-nav-collapse");
+  //   } else {
+  //     $(".navbar-fixed-top").removeClass("top-nav-collapse");
+  //   }
+  // });
 
   //jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function() {
