@@ -3,27 +3,9 @@
   new WOW().init();
 
   jQuery(window).load(function() {
-    jQuery("#preloader").delay(100).fadeOut("slow");
-    jQuery("#load").delay(100).fadeOut("slow");
-    if ('showIntro' in sessionStorage) {
-      $('#intro').show();
-      $('.navbar').hide();
-      $('#home-section').hide();
-      $('#footer').hide();
-    } else {
-      $('#intro').hide();
-      $('.navbar').show();
-      $('.home-section').show();
-      $('#footer').show();
-    }
-  });
-
-  $('#close-intro').click(function() {
-    $('#intro').fadeOut(1000);
-    sessionStorage.setItem('showIntro', "true");
-    $('.navbar').show();
-    $('.home-section').show();
-    $('#footer').show();
+    jQuery("#preloader").delay(1).fadeOut("slow");
+    jQuery("#load").delay(1).fadeOut("slow");
+    $('#intro').fadeOut(5000);
   });
 
 
