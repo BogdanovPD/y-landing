@@ -916,5 +916,9 @@ Parallax
         padding: 0;
     }
 
+    .desc {
+        text-align: justify;
+    }
+
 
 }
