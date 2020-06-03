@@ -3,9 +3,7 @@
   new WOW().init();
 
   jQuery(window).load(function() {
-    jQuery("#preloader").delay(1).fadeOut("slow");
-    jQuery("#load").delay(1).fadeOut("slow");
-    $('#intro').delay(2).fadeOut(3000);
+    $('#intro').fadeOut(3500);
   });
 
 
