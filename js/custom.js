@@ -3,7 +3,7 @@
   new WOW().init();
 
   jQuery(window).load(function() {
-    $('#intro').fadeOut(3500);
+    $('#intro').fadeOut(3000);
   });
 
 
