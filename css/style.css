@@ -293,8 +293,8 @@ hr {
 ============================ */
 
 .home-section {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     padding-left: 2%;
     padding-right: 2%;
 	display:block;
@@ -341,10 +341,14 @@ hr {
 .intro {
 	/*width:100%;*/
 	position: center;
-	background: url(../img/banner.jpg) no-repeat top center;
+	background: url(../img/banner.jpg) no-repeat top center; !important;
     /*background-size: cover;*/
     /*height: 100%;*/
-    background-color: #000;
+    /*background: rgb(255,255,255);*/
+    /*background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);*/
+    /*background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);*/
+    /*background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e8d4ff",GradientType=1);*/
 }
 
 #intro.intro {

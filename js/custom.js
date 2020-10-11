@@ -9,9 +9,6 @@
         var $spy = $(this).scrollspy('refresh')
       })
     }, 1000);
-    setTimeout(function () {
-      $("body").removeClass("gradient");
-    }, 3000)
   });
 
 
