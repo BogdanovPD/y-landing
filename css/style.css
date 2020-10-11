@@ -341,7 +341,9 @@ hr {
 .intro {
 	width:100%;
 	position: center;
-	background: url(../img/banner.jpg) no-repeat top center; !important;
+	background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     /*background-size: cover;*/
     height: 100%;
     /*background: rgb(255,255,255);*/
