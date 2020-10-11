@@ -6,16 +6,24 @@
 */
 
 /* ==== Google font ==== */
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400italic');
 
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Montserrat',sans-serif;
 	font-weight: 300;
-    color: #666;
+    color: #353535;
     background-color: #fff;
+}
+
+.gradient {
+    background: rgba(255,255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e8d4ff",GradientType=1);
 }
 
 html {
@@ -40,6 +48,18 @@ p {
     margin: 0 0 20px;
     font-size: 16px;
     line-height: 1.6em;
+    color: #353535;
+}
+
+b {
+    margin: 0 0 20px;
+    /*text-transform: uppercase;*/
+    font-family: Montserrat,sans-serif;
+    line-height: 1.6em;
+    color: #353535;
+    font-size: 16px;
+    font-weight: 700;
+    /*letter-spacing: 1px;*/
 }
 
 p.lead {
@@ -57,6 +77,10 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: #176e61;
+}
+
+.hidden {
+    display: none;
 }
 
 .list-img {
@@ -85,7 +109,6 @@ a:focus {
 }
 
 .navbar-brand h1{
-	color: #fff;
   font-size: 20px;
   line-height: 40px;
 }
@@ -96,7 +119,7 @@ a:focus {
 
 .nav.navbar-nav {
     background-color: rgba(0,0,0,0);
-    color: rgba(255,255,255,255);
+    color: #353535;
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -383,6 +406,7 @@ hr {
 ============================ */
 
 .about-text {
+    margin-top: 5vh;
     font-size: 16px;
 }
 
@@ -396,11 +420,13 @@ hr {
 }
 
 .team h5 {
-	margin-bottom: 20px;
+	margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .team p.subtitle {
-	margin-bottom: 10px;
+	margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .avatar {
@@ -596,11 +622,11 @@ footer {
 }
 
 footer p {
-	color: #f8f8f8;
+	color: #353535;
 }
 
 .credits, .credits a {
-    color: #fff;
+    color: #353535;
 }
 
 /* ==========================
@@ -662,10 +688,10 @@ Parallax
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #353535;
     border-radius: 50%;
     font-size: 40px;
-    color: #fff;
+    color: #353535;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -674,27 +700,27 @@ Parallax
 
 .btn-circle.btn-dark {
     border: 2px solid #666;
-    color: #666;
+    color: #353535;
 }
 
 
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
+    color: #353535;
+    /*background: rgba(255,255,255,.1);*/
 }
 
 .btn-circle.btn-dark :hover,
 .btn-circle.btn-dark :focus {
     outline: 0;
-    color: #999;
-    background: #fff;
+    color: #353535;
+    background: #353535;
 }
 
 .btn-circle.btn-dark :hover i,
 .btn-circle.btn-dark :focus i{
-    color: #999;
+    color: #353535;
 }
 
 .page-scroll .btn-circle i.animated {

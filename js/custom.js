@@ -4,6 +4,14 @@
 
   jQuery(window).load(function() {
     $('#intro').fadeOut(3000);
+    setInterval(function () {
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh')
+      })
+    }, 1000);
+    setTimeout(function () {
+      $("body").removeClass("gradient");
+    }, 3000)
   });
 
 
@@ -45,5 +53,34 @@
 	navMain.on("click", "a:not([data-toggle])", null, function () {
 	   navMain.collapse('hide');
 	});
+
+  $("#liza-disp").click(function () {
+    $("#liza-body").toggleClass("hidden");
+    $("#liza-disp").toggleClass("fa-angle-up");
+    $("#liza-disp").toggleClass("fa-angle-down");
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    })
+  });
+  $("#natalie-disp").click(function () {
+    $("#natalie-body").toggleClass("hidden");
+    $("#natalie-disp").toggleClass("fa-angle-up");
+    $("#natalie-disp").toggleClass("fa-angle-down");
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    })
+  });
+
+  if (window.location.hash === '#liza') {
+    $("#liza-body").removeClass("hidden");
+    $("#liza-disp").toggleClass("fa-angle-up");
+    $("#liza-disp").toggleClass("fa-angle-down");
+  }
+
+  if (window.location.hash === '#natalia') {
+    $("#natalie-body").removeClass("hidden");
+    $("#natalie-disp").toggleClass("fa-angle-up");
+    $("#natalie-disp").toggleClass("fa-angle-down");
+  }
 
 })(jQuery);

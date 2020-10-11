@@ -1,52 +1,78 @@
 
 a,.tp-caption a.btn:hover {
-	color: #67b0d1;
+	color: #353535;
 }
 .top-nav-collapse {
-	background: #000;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e8d4ff",GradientType=1);
 }
 
 @media (max-width: 1000px) {
   .navbar, .navbar-nav {
-		background: #000 !important;
+	  background: rgb(255,255,255);
+	  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	  background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e8d4ff",GradientType=1);
 	}
 
 	.navbar-brand h1 {
 		font-size: 18px;
+		color: #353535;
 	}
 
 	.navbar-nav a {
-		color: #fff !important;
+		color: #353535 !important;
 	}
 }
 
+a.link {
+	color: #0000FF;
+}
+
+a.link:hover {
+	color: #E8D4FF;
+}
+
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: #000;
+	color: #353535;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background-color: #67b0d1;
+    background-color: #00EDFF;
 }
 
 .widget-avatar .avatar:hover {
-    border: 5px solid #67b0d1;
+    border: 5px solid #00EDFF;
 }
 
 .bg-skin {
-	background: #000;
+	background: #353535;
 }
 
 form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
-	border-color: #67b0d1;
+	border-color: #00EDFF;
 }
 
 footer {
-    background-color: #000;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(179,255,127,1) 25%, rgba(0,237,255,1) 50%, rgba(0,0,255,1) 75%, rgba(232,212,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e8d4ff",GradientType=1);
 }
 
 .btn-skin {
-  color: #fff;
-  background-color: #000;
-  border-color: #000;
+  color: #353535;
+  background-color: #353535;
+  border-color: #353535;
+}
+
+.btn-hideable {
+	background: #fff;
+	border: 0;
 }
